@@ -9,7 +9,7 @@ import os
 load_dotenv()
 
 # AWS configurations
-region = "us-east-1"  # Replace with your preferred AWS region
+region = "us-east-1"  # Replace with your AWS region
 bucket_name = "oluhdev-nba-analytics-data-lake"  # Change to a unique S3 bucket name
 glue_database_name = "glue_nba_data_lake"
 athena_output_location = f"s3://{bucket_name}/athena-results/"
