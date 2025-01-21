@@ -10,7 +10,7 @@ The Fucntionality of nba_data_lake_setup.py script includes:
 - Creates an Amazon S3 Bucket where raw and processed NBA data will be stored.
 - Uploads NBA Data to S3 in JSON Format.
 - Creates an AWS Glue database and an external table for querying the data.
-- Configures Athena for quering data in the S3 Bucket.
+- Configures Athena for querying data in the S3 Bucket.
 
 # Prerequisites
 1.  SportsDataIO Account and API Key.
