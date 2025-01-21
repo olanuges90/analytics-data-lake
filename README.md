@@ -6,7 +6,7 @@ This repository contains a Python script for Automating Sports Analytics(NBA) Da
 
 
 # Overview
-The Fucntionality of nba_data_lake_setup.py script includes:
+The Functionality of nba_data_lake_setup.py script includes:
 - Creates an Amazon S3 Bucket where raw and processed NBA data will be stored.
 - Uploads NBA Data to S3 in JSON Format.
 - Creates an AWS Glue database and an external table for querying the data.
@@ -80,7 +80,7 @@ Step 3: Create a Requirement file to specify the dependencies. (library and Pack
   
 Step 4: Create a Virtual environment for the Python project.
 
-- Run the commmand to create an isolated environment for the Python project:
+- Run the command to create an isolated environment for the Python project:
 
       python -m venv venv
   
@@ -94,7 +94,7 @@ Step 4: Create a Virtual environment for the Python project.
 
 Step 5: Install the Dependencies.
 
-- Run the commmand to Install the required Packages: 
+- Run the command to Install the required Packages: 
 
       pip install -r requirements.txt
   
@@ -111,12 +111,12 @@ Step 7:  Verify the Resources created.
   - Confirm if the Bucket with the preferred unique name has been created and Click on the bucket.
     
 - Inspect the Objects in the Amazon S3 Bucket:
-  - Click on the Bucket and Verify the Objects stored in the Bucket (There should be 2 Objects named Athena Results and Raw Data).
+  - Verify the Objects stored in the Bucket (There should be 2 Objects named Athena Results and Raw Data).
   - Click on the Raw Data Object and verify the file with the JSON Format.
   - Click on the File in the JSON Format and Open the file.
   - Choose an Application to View the file (i.e Visual Studio Code). You'll see a long string of NBA Data.
       
-- Launch Amazon Athena to Query Data stored in S3:
+Step 8: Launch Amazon Athena to Query Data stored in S3:
   -  In the AWS Management Console search bar, Type Athena and click on it.
   -  Navigate to Launch Query Editor.
   -  In the Query Editor, Paste a Sample Query Below (The provided SQL query retrieves a list of players from the nba_players table who play the position of point guard 'PG').
@@ -125,10 +125,10 @@ Step 7:  Verify the Resources created.
             FROM nba_players
             WHERE Position = 'PG';
      
-  - Click Run to execute the Query
+  - Click Run to execute the Query.
   - Scroll down to View the Query Result.
 
-## Bonus Step: If you are interested in cleaning up and preventing incurring unneccesary cloud costs:
+## Bonus Step: If you are interested in cleaning up and preventing incurring unnecessary cloud costs:
 - In the CloudShell, create the script file using the command and Press Enter.
 
       nano delete_aws_resources.py
