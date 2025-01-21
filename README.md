@@ -12,7 +12,7 @@ The Fucntionality of nba_data_lake_setup.py script includes:
 - Creates an AWS Glue database and an external table for querying the data.
 - Configures Athena for querying data in the S3 Bucket.
 
-# Prerequisites
+# Prerequisities
 1.  SportsDataIO Account and API Key.
 - Create an account on SportsData.io.
 - Navigate to Developers. Click on Introduction and Testing, Select SportsDataIO API Free Trial.
